@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+- **Цель:** Создать полностью работающее приложение с функционалом:
+  - Авторизация (NextAuth.js / JWT)
+  - База данных (Prisma + PostgreSQL/MySQL через Docker)
+  - Тестирование (unit, интеграционные, E2E)
+  - Контейнеризация (Docker)
+  - Оффлайн-режим (PWA: service worker, IndexedDB)
+  - SEO-оптимизация (динамические meta-теги, sitemap, структурированные данные)
+  - Написание на TypeScript с практикой работы с Git (ветвление, PR, code review, CI/CD)
