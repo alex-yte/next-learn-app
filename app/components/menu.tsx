@@ -4,15 +4,20 @@ import Link from 'next/link';
 export default function Menu() {
     return (
         <nav>
-            <ul>
+            <ul  className='flex justify-center gap-[1rem]' >
                 <li>
-                    <Link href="/">
-                        <a>Home</a>
+                    <Link className='underline' href="/">
+                        Home
                     </Link>
                 </li>
                 <li>
-                    <Link href="/about">
-                        <a>About</a>
+                    <Link className='underline' href="/about">
+                        About
+                    </Link>
+                </li>
+                <li>
+                    <Link className='underline' href="/contact">
+                        Contact
                     </Link>
                 </li>
             </ul>
