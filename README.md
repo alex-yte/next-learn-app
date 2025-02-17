@@ -36,11 +36,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-- **Цель:** Создать полностью работающее приложение с функционалом:
-  - Авторизация (NextAuth.js / JWT)
-  - База данных (Prisma + PostgreSQL/MySQL через Docker)
-  - Тестирование (unit, интеграционные, E2E)
-  - Контейнеризация (Docker)
-  - Оффлайн-режим (PWA: service worker, IndexedDB)
-  - SEO-оптимизация (динамические meta-теги, sitemap, структурированные данные)
-  - Написание на TypeScript с практикой работы с Git (ветвление, PR, code review, CI/CD)
+## Общая информация
+- **Формат:** 4 часа в день (≈180 часов за 45 дней)
+- **Цель:** Создать полностью функционирующую блог-платформу/CMS, которая включает:
+  - Управление контентом (создание, редактирование, удаление постов, категорий, комментариев)
+  - Авторизацию (NextAuth.js / JWT) для администраторов и авторов
+  - Базу данных (Prisma + PostgreSQL/MySQL через Docker) для хранения постов, пользователей, комментариев и настроек
+  - SEO-оптимизацию (динамические meta-теги, sitemap, структурированные данные)
+  - Оффлайн-режим (PWA: service worker, IndexedDB) для доступа к контенту
+  - Полный набор тестирования (unit, интеграционные, E2E)
+  - Контейнеризацию (Docker) и CI/CD (GitHub Actions)
+  - Работа с Git (ветвление, PR, Code Review)
