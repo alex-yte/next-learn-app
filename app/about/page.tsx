@@ -1,8 +1,8 @@
 
 export default function AboutPage() {
     return (
-        <div>
+        <section>
             <h1 className="text-xl">About Page</h1>
-        </div>
+        </section>
     );
 }
