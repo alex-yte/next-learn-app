@@ -6,6 +6,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Здесь можно добавить метатеги или ссылки на внешние ресурсы */}
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
