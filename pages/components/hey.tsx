@@ -14,12 +14,15 @@ export default function Hey(props: {name: string}) {
 
     useEffect(() => {
 
-        fetch('/api/hello?name=' + props.name)
+        fetch('/api/hello?name=' + props.name , { method: 'GET' })
             .then(response => response.json())
-            .then(json => {
+            .then((json: ResponseData) => {
                 setMessage(json.message);
+            })
+            .catch(error => {
+                console.error('Error fetching message:', error);
             });
-    }, []);
+    }, [props.name]);
 
     return (
         <main>

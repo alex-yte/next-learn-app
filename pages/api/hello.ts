@@ -13,5 +13,9 @@ export default function handler(
       res.status(400).json({ message: 'Please provide a name' });
       return;
     }
-    res.status(200).json({ message: 'Hello from Next.js! Your name is: ' + name || '' })
+    if (typeof name !== 'string') {
+      res.status(400).json({ message: 'Name must be a string' });
+      return;
+    }
+    res.status(200).json({ message: 'Hello from Next.js! Your name is: ' + name});
 }
