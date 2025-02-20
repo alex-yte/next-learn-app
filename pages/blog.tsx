@@ -11,7 +11,7 @@ type Post = {
 
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5&_page=1")
   const posts = await res.json();
 
 
@@ -28,7 +28,7 @@ export default function BlogPage({ posts }: InferGetStaticPropsType<typeof getSt
       <main>
         <h1>Blog</h1>
         <ul id="blog-list">
-          {posts.map((post: any) => (
+          {posts.map((post: Post) => (
             <li key={post.id}>
               <h2>{post.title}</h2>
               <p>{post.body}</p>
