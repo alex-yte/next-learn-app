@@ -1,4 +1,5 @@
 import type { InferGetStaticPropsType, GetStaticProps } from "next";
+import PostCard from "./components/PostCard";
 
 import './blog.css';
 
@@ -29,10 +30,13 @@ export default function BlogPage({ posts }: InferGetStaticPropsType<typeof getSt
         <h1>Blog</h1>
         <ul id="blog-list">
           {posts.map((post: Post) => (
-            <li key={post.id}>
-              <h2>{post.title}</h2>
-              <p>{post.body}</p>
-            </li>
+            <PostCard
+              key={post.id}
+              id={post.id}
+              title={post.title}
+              body={post.body}
+              link={`/blog/${post.id}`}
+            />
           ))}
         </ul>
       </main>
