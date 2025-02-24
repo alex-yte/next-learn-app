@@ -1,4 +1,4 @@
-ul#blog-list{
+.blogList {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@ ul#blog-list{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
 
-    li{
+    li {
         border: 1px solid #ccc;
         padding: 10px;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         transition: all 0.3s;
 
-        h2{
+        h2 {
             font-size: 1.5em;
             line-height: 1.2;
             margin: 0;
@@ -22,7 +22,7 @@ ul#blog-list{
             font-weight: bold;
         }
 
-        p{
+        p {
             font-size: 1em;
             color: #666;
         }

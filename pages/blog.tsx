@@ -1,8 +1,9 @@
 // pages/blog.tsx
 import type { InferGetStaticPropsType, GetStaticProps } from 'next';
 import PostCard from './components/PostCard';
-import './blog.css';
-import { log } from 'console';
+// import './blog.css';
+// import { log } from 'console';
+import styles from './blog.module.css';
 
 type Post = {
   userId: number;
@@ -51,7 +52,7 @@ export default function BlogPage({ posts }: InferGetStaticPropsType<typeof getSt
   return (
     <main>
       <h1>Блог</h1>
-      <ul id="blog-list">
+      <ul className={styles.blogList}>
         {posts.map((post: PostWithAuthor) => (
           <PostCard
             key={post.id}
