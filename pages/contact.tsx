@@ -34,7 +34,7 @@ function ContactPage() {
 
 
   return (
-    <>
+    <main>
       <section>
           <h1 className="text-xl">Contact page</h1>
       </section>
@@ -49,7 +49,7 @@ function ContactPage() {
       } // Меняем id в пределах 1-10
       > Change id</button>
 
-    </>
+    </main>
   )
 }
 
