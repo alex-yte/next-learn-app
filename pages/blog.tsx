@@ -50,8 +50,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
 export default function BlogPage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <main>
-      <h1>Блог</h1>
+    <main className='container mx-auto p-4 w-[95vw] sm:w-[75vw]'>
+      <h1 className='text-2xl font-semibold mb-4'>Блог</h1>
       <ul className={styles.blogList}>
         {posts.map((post: PostWithAuthor) => (
           <PostCard
