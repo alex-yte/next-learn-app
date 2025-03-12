@@ -1,4 +1,5 @@
 import { useGlobalContext } from "../context/GlobalContext";
+import Login from "../components/login";
 
 export default function DashboardPage() {
   const { user } = useGlobalContext();
@@ -8,6 +9,9 @@ export default function DashboardPage() {
       <main>
         <h1>Доступ запрещен</h1>
         <p>Вы не являетесь администратором.</p>
+
+        <Login />
+
       </main>
     );
   }
