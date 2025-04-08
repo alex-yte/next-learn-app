@@ -16,26 +16,15 @@ export default function Menu() {
                     </Link>
                 </li>
                 <li>
+                    <Link className='underline' href="/projects">
+                        Projects
+                    </Link>
+                </li>
+                <li>
                     <Link className='underline' href="/contact">
-                        Contact
+                        Contacts
                     </Link>
                 </li>
-                <li>
-                    <Link className='underline' href="/blog">
-                        Blog
-                    </Link>
-                </li>
-                <li>
-                    <Link className='underline' href="/admin/posts">
-                        Admin
-                    </Link>
-                </li>
-                <li>
-                    <Link className='underline' href="/admin/dashboard">
-                        Dashboard
-                    </Link>
-                </li>
-
             </ul>
         </nav>
     );
